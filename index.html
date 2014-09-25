@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TelehealthNow Robotics</title>
+    <link href="assets/style.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico"/>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="#">
+          <img src="assets/th-logo.png" id="navbar-image" alt="Telehealth Now" width="390px" />
+        </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="link">
+              <a href="#product">
+                <h4>Product</h4>
+              </a>
+            </li>
+            <li class="link">
+              <a href="#campaign">
+                <h4>Campaign</h4>
+              </a>
+            </li>
+            <li class="link">
+              <a href="#team">
+                <h4>Team</h4>
+              </a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="product" class="background-area"></div>
+      <section>
+        <h1>Product</h1>
+        <p>TeleHealthRobotics is creating the world’s first tele-robotic healthcare platform that promises to bring down the cost of healthcare delivery by capitalizing on efficiency gains from technology.</p>
+        <p>TeleHealthRobotics uses TRUDI: Tele-Robotic Ultrasound for Distance Imaging. TRUDI leverages the convergence of low cost robotics and control systems with advanced tele-presence. It allows an experienced operator located anywhere in the world to operate a diagnostic ultrasound system at a distance.</p>
+        <p>Ultrasound is one of the fastest growing diagnostic tools in healthcare. The organs it is used to image (heart, vascular system, brain, abdomen, and uterus), the ways in which it is used (prevention, detection, procedure image guidance, procedure follow-up, chronic care), and the locations in which it can be used (everywhere from the clinic to the battlefield to the procedure room to the pharmacy) are all growing rapidly.</p>
+      </section>
+      <div id="campaign" class="background-area"></div>
+      <section>
+        <h1>Campaign</h1>
+        <p>We need your help!</p>
+        <p><i>Details here. Why should someone support this campaign? What concrete advances or achievements will their contribution make possible?</i></p>
+      </section>
+      <div id="team" class="background-area"></div>
+      <section>
+        <h1>Team</h1>
+        <p>Dr. Jeff Soble is a successful serial entrepreneur having founded Amaji® Health Information Systems and Cyberpulse. Several of his company's products are in the marketplace being resold through GE, Merge, and Siemens as well as direct to hospitals.  He is also a cardiologist with professional concentration in echocardiography and an associate professor at Rush University Medical Center.</p>
+        <p>Sarah Doherty trained as a biomedical engineer at the University of Pennsylvania, has done high-tech product design and development work in the healthcare, consumer, and electronic sensing spaces for Fortune 500 and start-up companies, and was previously a healthcare management consultant.</p>
+      </section>
+      <div class="background-area"></div>
+    </div>
+  </body>
+  <script>
+    $(function() {
+
+      // Smooth scrolling 
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+
+      // Give active class to clicked link
+      $("a").click(function() {
+        $("li").removeClass("active");
+        $(this).parent().addClass("active");
+      });
+    });
+  </script>
+</html>

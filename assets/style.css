@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../assets/font/SourceSansPro-Regular.otf');
+}
+
+* { 
+  font-family: 'SourceSansPro', 'Helvetica', serif;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0 !important;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+section {
+  padding: 20px 40px;
+}
+
+.background-area {
+  background-image: url('../assets/device-amber.jpg');
+  height: 40vh;
+  text-indent: -9999px;
+  /* fix background */
+  background-attachment: fixed;
+  /* center it */
+  background-position: center center;
+  /* Scale it nicely to the element */
+  background-size: cover;
+  /* just make it look a bit better ;) */
+  &:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  }
+}
+
+#navbar-image {
+  padding-left: 36px;
+}
+
+/* Adjust brand image positioning with bootstrap */
+@media (max-width: 768px) { 
+  #navbar-image {
+    margin-top: -11px;
+    padding-left: 6px;
+  }
+}
+
+
+.link.active {
+  background-color: black;
+  color: white;
+}
