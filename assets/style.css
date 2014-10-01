@@ -18,6 +18,7 @@ img:hover {
 
 section {
   padding: 20px 40px;
+  position: relative;
 }
 
 .background-area {
@@ -48,8 +49,23 @@ section {
   }
 }
 
-
 .link.active {
   background-color: black;
   color: white;
+}
+
+.head-box {
+  display: block;
+  width: 600px;
+  height: 200px;
+  margin: auto auto;
+}
+
+.headshot { 
+  float: left;
+  margin: 40px 80px;
+}
+
+.headshot img {
+  border-radius: 70px;
 }
